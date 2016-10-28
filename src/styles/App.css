@@ -29,6 +29,29 @@ html,body{
   height: 100%;
   overflow: hidden;
   background-color: #ddd;
+
+}
+.img-figure{
+  width: 300px;
+  height: 300px;
+  margin:0;
+  padding: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+figcaption{
+  text-align: center;
+}
+.img-title{
+    margin:20px 0 0 0;
+    color:#a7a0a2;
+    font-size: 16px;
+}
+.img-sec img{
+  width: 200px;
+  height: 200px;
 }
 
 
