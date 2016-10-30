@@ -23,7 +23,7 @@ function getDefaultModules() {
     }],
     loaders: [{
       test: /\.css$/,
-      loader: 'style-loader!css-loader!'
+      loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
     }, {
       test: /\.sass/,
       loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'
@@ -40,7 +40,7 @@ function getDefaultModules() {
       test: /\.(png|jpg|gif|woff|woff2)$/,
       loader: 'url-loader?limit=8192'
     }, {
-      test: /\.(mp4|ogg|svg)$/,
+      test: /\.(mp4|ogg|svg|ttf)$/,
       loader: 'file-loader'
     }, {
       test: /\.json$/,
