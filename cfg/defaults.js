@@ -23,7 +23,7 @@ function getDefaultModules() {
     }],
     loaders: [{
       test: /\.css$/,
-      loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
+      loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}'
     }, {
       test: /\.sass/,
       loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'

@@ -1,4 +1,8 @@
 /* Base Application Styles */
+@font-face {
+    font-family: "icons-turn-arrow";
+    src: url(url("../fonts/icons/turn-arrow.woff") format("woff"), url("../fonts/icons/turn-arrow.svg") format("svg");
+}
 html,body{
   width: 100%;
   height: 100%;
@@ -41,7 +45,7 @@ html,body{
   position: absolute;
   cursor: pointer;
   transform-style: preserve-3d;
-  transition:left .6s ease-in-out,top .6s ease-in-out;
+  transition:all .8s ease-in-out;
   transform-origin: 0 50% 0;
 }
 .img-figure.is-inverse{
@@ -66,7 +70,7 @@ figcaption{
   color:#a7a0a2;
   font-size: 22px;
   line-height: 1.25;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   box-sizing: border-box;
   transform: rotateY(180deg) translateZ(1px);
@@ -113,10 +117,12 @@ figcaption{
 }
 .controller-unit.is-center::after{
   color: #fff;
-  content: "➡️";
+  font-family: "icons-turn-arrow";
+  font-size: 80%;
   line-height: 30px;
-  －webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  content: "\e600";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .controller-unit.is-inverse{
   background-color: #555;
